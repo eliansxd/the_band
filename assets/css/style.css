@@ -236,7 +236,7 @@ html {
 }
 
 #content #tour .tickets-list {
-    color: #000 !important;
+    margin-top: 16px;
     font-size: 15px;
     background-color: #fff;
 }
