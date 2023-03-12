@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-/* common */
+/* Common */
 
 html {
     font-family: "Lato", sans-serif;
+}
+
+.hidden {
+    display: none !important;
 }
 
 .text-white {
@@ -60,14 +64,14 @@ html {
 }
 
 
-/* header */
+/* Header */
 
 #header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 46.5px;
+    height: 46px;
     background-color: #000;
     z-index: 1;
 }
@@ -80,12 +84,13 @@ html {
     padding: 0 23px;
     display: inline-block;
     position: relative;
+    margin: 0;
 }
 
 #nav>li>a {
     margin: 0;
     font-size: 15px;
-    line-height: 46.5px;
+    line-height: 46px;
     text-decoration: none;
     color: #fff;
 }
@@ -105,16 +110,16 @@ html {
     color: #000;
 }
 
-#nav>li:hover .subnav {
-    display: block;
+#nav .mobile-hidden:hover .subnav {
+    display: block !important;
 }
 
 #nav .subnav {
+    display: none;
     position: absolute;
     background-color: #fff;
     left: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    display: none;
 }
 
 #nav .subnav li {
@@ -131,23 +136,38 @@ html {
     color: #000;
 }
 
-#header .search-btn {
-    float: right;
+#header .bar-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    display: none;
+    color: #fff;
+    padding: 14px 24px;
+    cursor: pointer;
 }
 
 #header .search-btn {
+    cursor: pointer;
+    float: right;
     color: #fff;
-    padding: 11.5px 24px;
+    padding: 12px 24px;
+}
+
+#header .bar-btn:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 #header .search-btn:hover {
     background-color: #f44336;
-    cursor: pointer;
 }
+
+/* Slider */
 
 #slider {
     background: url('../img/la.jpg') top center / cover no-repeat;
-    margin-top: 46.5px;
+    margin-top: 46px;
     padding-top: 42%;
 }
 
@@ -169,7 +189,8 @@ html {
     font-weight: bold;
 }
 
-/* CONTENT */
+/* Content Common */
+
 #content .heading {
     font-size: 30px;
     letter-spacing: 4px;
@@ -194,17 +215,16 @@ html {
     text-align: justify !important;
 }
 
-/* CONTENT */
+/* Band */
 
 #content #band {
+    width: 800px;
+    max-width: 100%;
     padding: 64px 16px;
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
     margin-bottom: 48px;
 }
-
-/*  */
 
 #band .members-list {
     margin-top: 48px;
@@ -221,7 +241,7 @@ html {
     border-radius: 4px;
 }
 
-/* END: Band */
+/* Tour */
 
 #content #tour {
     background-color: #000;
@@ -229,10 +249,11 @@ html {
 }
 
 #content #tour .tour-section {
+    width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;
-    width: 800px;
 }
 
 #content #tour .tickets-list {
@@ -317,14 +338,15 @@ html {
 }
 
 #content #contact {
+    width: 800px;
+    max-width: 100%;
     color: #000;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;
-    width: 800px;
 }
 
-/* MODAL */
+/* Modal */
 
 .modal {
     position: fixed;
@@ -428,8 +450,6 @@ html {
     color: #000 !important;
 }
 
-/* END: MODAL */
-
 /* Contact from */
 
 .contact-content {
@@ -469,6 +489,8 @@ html {
     filter: grayscale(50%);
     width: 100%;
 }
+
+/* Footer */
 
 #footer {
     padding: 64px 16px;

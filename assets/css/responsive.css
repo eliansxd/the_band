@@ -1,0 +1,102 @@
+/* Common */
+
+.mobile-hidden {
+    display: none !important;
+}
+
+.r-width-full {
+    width: 100%;
+}
+
+/* Responsive */
+
+#header {
+    overflow: hidden;
+}
+
+#nav {
+    display: block;
+}
+
+#nav>li {
+    display: block;
+}
+
+#nav>li:first-child {
+    display: inline-block;
+}
+
+#nav>li:last-child {
+    display: block !important;
+}
+
+#header .search-btn {
+    display: none;
+}
+
+#header .bar-btn {
+    display: block;
+    text-align: center;
+}
+
+#slider {
+    max-width: 100%;
+}
+
+#slider .text-content {
+    display: none;
+}
+
+#content .description {
+    line-height: 1.5;
+}
+
+#band .members-list {
+    display: block;
+    text-align: justify !important;
+}
+
+#band .members-list .member-item {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#band .members-list img {
+    width: 60%;
+    margin: 0;
+}
+
+#band .members-list .member-name {
+    margin: 15px 0;
+}
+
+
+#tour .place-list>div {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#contact .contact-info,
+#contact .contact-form {
+    width: 100%;
+}
+
+#contact .contact-info {
+    margin-bottom: 16px;
+}
+
+#contact .contact-info .fa {
+    font-size: 18px;
+}
+
+#contact .contact-form .col {
+    width: 100%;
+}
+
+#contact .corm-control {
+    font: inherit;
+}
+
+.modal-container {
+    margin: 0 15px;
+}
