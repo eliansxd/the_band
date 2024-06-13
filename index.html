@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>The Band</title>
+</head>
+
+<body>
+    <header>
+        <ul class="nav">
+            <li class="nav__item nav__item-child">
+                <a class="nav__link">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item nav__mobile-js">
+                <a href="#band" class="nav__link">Band</a>
+            </li>
+            <li class="nav__item nav__mobile-js">
+                <a href="#tour" class="nav__link">Tour</a>
+            </li>
+            <li class="nav__item nav__mobile-js">
+                <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item subnav__mobile-js">
+                <a class="nav__link">
+                    More <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="subnav">
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">Merchandise</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">Extras</a>
+                    </li>
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">Media</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item nav__item-child">
+                <a href="#" class="nav__link">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="slider">
+        <img class="slider__img" src="assets/img/chicago.jpg" alt="Chicago Image">
+        <div class="slider__text">
+            <h2 class="slider__heading">Chicago</h2>
+            <p class="slider__description">Thank you, Chicago - A night we won't forget.</p>
+        </div>
+    </div>
+    <div class="section" id="band">
+        <h2 class="section__heading">The Band</h2>
+        <h3 class="section__subheading">We love music</h3>
+        <p class="section__description">We have created a fictional band website. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="section__content">
+            <ul class="row">
+                <li class="member__item col-third">
+                    <h3 class="member__name">Name</h3>
+                    <img src="assets/img/bandmember.jpg" alt="Band Member" class="member_img">
+                </li>
+                <li class="member__item col-third">
+                    <h3 class="member__name">Name</h3>
+                    <img src="assets/img/bandmember.jpg" alt="Band Member" class="member_img">
+                </li>
+                <li class="member__item col-third">
+                    <h3 class="member__name">Name</h3>
+                    <img src="assets/img/bandmember.jpg" alt="Band Member" class="member_img">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper" id="tour">
+        <div class="section section--dark">
+            <h2 class="section__heading">Tour Dates</h2>
+            <h3 class="section__subheading">Remember to book your tickets!</h3>
+            <div class="section__content">
+                <ul class="tickets">
+                    <li class="ticket__month ticket__month--soldout">
+                        September <span class="soldout">Sold out</span>
+                    </li>
+                    <li class="ticket__month ticket__month--soldout">
+                        October <span class="soldout">Sold out</span>
+                    </li>
+                    <li class="ticket__month ticket__month--value">
+                        November <span class="soldout">3</span>
+                    </li>
+                </ul>
+                <ul class="places row">
+                    <li class="place__item col-third col">
+                        <img class="place__img" src="assets/img/newyork.jpg" alt="">
+                        <div class="place__content">
+                            <h3 class="place__name">New York</h3>
+                            <p class="place__date">Fri 27 Nov 2016</p>
+                            <p class="place__description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button onclick="openModal()" class="btn place__btn">Buy Tickets</button>
+                        </div>
+                    </li>
+                    <li class="place__item col-third col">
+                        <img class="place__img" src="assets/img/paris.jpg" alt="">
+                        <div class="place__content">
+                            <h3 class="place__name">Paris</h3>
+                            <p class="place__date">Sat 28 Nov 2016</p>
+                            <p class="place__description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button onclick="openModal()" class="btn place__btn">Buy Tickets</button>
+                        </div>
+                    </li>
+                    <li class="place__item col-third col">
+                        <img class="place__img" src="assets/img/sanfran.jpg" alt="">
+                        <div class="place__content">
+                            <h3 class="place__name">San Francisco</h3>
+                            <p class="place__date">Sun 29 Nov 2016</p>
+                            <p class="place__description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button onclick="openModal()" class="btn place__btn">Buy Tickets</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <h2 class="section__heading">Contact</h2>
+        <h3 class="section__subheading">Fan? Drop a note!</h3>
+        <div class="section__content row">
+            <ul class="socials">
+                <li class="social__item">
+                    <i class="social__icon fa-solid fa-location-dot"></i>
+                    <span class="social__text">Chicago, US</span>
+                </li>
+                <li class="social__item">
+                    <i class="social__icon fa-solid fa-phone"></i>
+                    <span class="social__text">Phone: +00 151515</span>
+                </li>
+                <li class="social__item">
+                    <i class="social__icon fa-solid fa-envelope"></i>
+                    <span class="social__text"> Email: mail@mail.com</span>
+                </li>
+            </ul>
+
+            <form class="form mb-120px">
+                <div class="form__wrapper">
+                    <input required type="text" placeholder="Name" class="form__input">
+                    <input required type="text" placeholder="Email" class="form__input">
+                </div>
+                <input required type="text" placeholder="Message" class="form__input">
+                <button type="submit" class="btn form__btn">SEND</button>
+            </form>
+        </div>
+    </div>
+    <div class="location">
+        <img class="location__img" src="assets/img/map.jpg" alt="Map Location">
+    </div>
+    <footer>
+        <ul class="footer__socials">
+            <li class="footer__icon"><i class="fa-brands fa-facebook"></i></li>
+            <li class="footer__icon"><i class="fa-brands fa-instagram"></i></li>
+            <li class="footer__icon"><i class="fa-brands fa-snapchat"></i></li>
+            <li class="footer__icon"><i class="fa-brands fa-pinterest"></i></li>
+            <li class="footer__icon"><i class="fa-brands fa-twitter"></i></li>
+            <li class="footer__icon"><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+        <p class="copyright">Made with <i class="red fa-solid fa-heart"></i>・Powered by <a class="copyright__link"
+                href="https://fb.com/elianxd.dev">Elian</a></p>
+    </footer>
+
+    <div onclick="closeModal()" class="modals">
+        <form class="modal__container" onclick="nothing(event)">
+            <div onclick="closeModal()" class="btn modal__close-btn-top"><i class="fa-solid fa-x"></i></div>
+            <div class="modal__heading"><i style="margin-right: 15px;" class="modal__icon fa-solid fa-ticket"></i>
+                Tickets</div>
+            <div class="modal__form">
+                <div class="modal__value">
+                    <h3 class="modal__value-heading">
+                        <i class="modal__value-icon fa-solid fa-cart-shopping"></i> Tickets, $15 per person
+                        <input required type="text" class="modal__value-input" placeholder="How many?">
+                    </h3>
+                    <h3 class="modal__value-heading">
+                        <i class="modal__value-icon fa-solid fa-user"></i> Send To
+                        <input required type="text" class="modal__value-input" placeholder="Enter email">
+                    </h3>
+                    <button class="btn modal__btn">PAY <i class="modal__value-icon fa-solid fa-check"></i></button>
+                    <div class="modal__help">Need <a class="modal__help-link" href="#">help?</a></div>
+                    <button onclick="closeModal()" class="btn modal__close-btn">Close <i
+                            class="modal__value-icon fa-solid fa-x"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
